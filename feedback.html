@@ -5,24 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css" />
   </head>
-  <body>
+  <body class="text-aling-center">
     <header>
       <!-- logo -->
-      <img src="../assets (1)/epicode_logo.png" alt="logo epicode_logo" />
+      <img class="logo" src="./assets/epicode_logo.png" alt="logo epicode_logo" />
     </header>
     <main>
       <h1><strong>Tell us how it's going</strong></h1>
-      <h3>From 0 to 10, how likely are you to recomended EPICODE <br />to a friend or a colleagua?</h3>
+      <h2>From 0 to 10, how likely are you to recomended EPICODE <br />to a friend or a colleagua?</h2>
       <!-- recensione -->
-      <div class=""></div>
-
-      <h3>Leave us an open feedback about your experience so far</h3>
+      <!-- <script>
+        for (let i = 0; i < 10; i++) {
+          const stella = document.getElementById("stella");
+          //stella.innerText("");
+          console.log(stella)
+        }
+      </script> -->
+      <img id="stella" src="./assets/star.svg" alt="stella della recenzione" />
+      <div class="margin-top"></div>
+      
+      <h2>Leave us an open feedback about your experience so far</h2>
       <div>
-        <input type="text" placeholder="Write your comment here" />
-        <hr />
-        <!-- <hr> provisorio  -->
-        <button type="submit" class="">MORE INFO</button>
+        <div>
+          <input class="comment-width" type="text" placeholder="Write your comment here" />
+        </div>
+        <button class="button-width" type="submit" class="">MORE INFO</button>
       </div>
     </main>
   </body>
