@@ -3,50 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=2.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <!-- logo -->
-      <img src="../assets (1)/epicode_logo.png" alt="logo epicode_logo" />
-    </header>
-    <main class="">
-      <div>
-        <h1><strong>Results</strong></h1>
-        <h4>The summary of your answer:</h4>
-      </div>
+    <main class="conteiner">
+      <header>
+        <img
+          class="logo"
+          src="./assets/epicode_logo.png"
+          alt="logo epicode_logo"
+        />
+        <div>
+          <h1>Results</h1>
+          <h3>The summary of your answer:</h3>
+        </div>
+      </header>
 
       <!-- blocco result -->
       <div class="">
         <!-- blocco di sinistra -->
-        <div>
-          <h1>Correct</h1>
-          <h1 class="">%</h1>
+        <div class="text-align-center">
+          <h2>Correct</h2>
+          <h2 class="">%</h2>
           <p class="">/6 questions</p>
         </div>
 
         <!-- blocco del centro -->
         <div>
-          <h5>Congratulations!</h5>
+          <h4>Congratulations!</h4>
           <!-- colorare il testo verde acqua -->
-          <h5 class="">You passed the exam.</h5>
+          <h4 class="">You passed the exam.</h4>
 
           <p>
-            We'll send you the certificate <br />in few minutes.<br />Check your email (including <br />promotions /
-            span folder)
+            We'll send you the certificate <br />in few minutes.<br />Check your
+            email (including <br />promotions / span folder)
           </p>
         </div>
         <!-- blocco di sinistra -->
         <div>
-          <h1>Wrong</h1>
-          <h1 class="">%</h1>
+          <h2>Wrong</h2>
+          <h2 class="">%</h2>
           <p class="">/6 questions</p>
         </div>
       </div>
+
+      <footer>
+        <button class="rate-us-button"><h2>RATE US</h2></button>
+      </footer>
     </main>
-    <footer>
-      <button><h2>RATE US</h2></button>
-    </footer>
   </body>
 </html>
