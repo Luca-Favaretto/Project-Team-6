@@ -83,3 +83,11 @@ ul {
 .text-aling-center {
   text-align: center;
 }
+.question-color{
+  color:#C2138C;
+}
+.question-footer {
+  margin-top: 6rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
