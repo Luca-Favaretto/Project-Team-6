@@ -48,23 +48,6 @@ ul li {
   );
 }
 
-.answer-button-color {
-  background: linear-gradient(
-    180deg,
-    rgba(210, 0, 148, 1) 21%,
-    rgba(144, 0, 128, 1) 100%
-  );
-  font-size: 16px;
-  border-radius: 50px;
-  border: 4px solid;
-  border-image: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  border-image-slice: 1;
-}
-
 .accent-color {
   color: #00ffff;
   font-size: 60px;
@@ -79,13 +62,7 @@ ul li {
   font-size: 1.5rem;
   padding: 1rem 3.5rem;
   font-weight: bold;
-  margin-left: 8rem;
-}
-.rate-us-button {
-  border: 3px solid white;
-  background: #ffffff00;
-  color: white;
-  font-size: 2rem;
+  margin-left: 12rem;
 }
 
 footer div {
