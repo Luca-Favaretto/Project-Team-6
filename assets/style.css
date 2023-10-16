@@ -11,20 +11,31 @@ body {
 }
 
 .logo {
-  font-size: 4rem;
+  width: 15rem;
+  margin-top: 3rem;
 }
 h1 {
   font-size: 5rem;
+  font-weight: 400;
+  line-height: 0.8;
+}
+
+h1 b {
+  font-weight: 800;
 }
 
 h3 {
   color: #c2128d;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 ul {
-  padding: 0;
+  padding-left: 1rem;
 }
-
+ul li {
+  margin: 0.5rem;
+}
 .wait-button-color {
   background-color: #23294f;
   font-size: 16px;
@@ -64,14 +75,22 @@ ul {
   border: none;
   -webkit-box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
   box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
-
-  font-size: 2rem;
+  font-weight: bolder;
+  font-size: 1.5rem;
   padding: 1rem 3.5rem;
   font-weight: bold;
+  margin-left: auto;
 }
 .rate-us-button {
   border: 3px solid white;
   background: #ffffff00;
   color: white;
   font-size: 2rem;
+}
+
+footer div {
+  display: inline-block;
+}
+footer label {
+  font-weight: 600;
 }
