@@ -1,6 +1,6 @@
 body {
   /* background-image: url(../assets/bg.jpg); */
-  /* background-image: url(../assets/assets/s); */
+
   background-image: url(./bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -88,11 +88,11 @@ h1 {
   border: none;
   -webkit-box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
   box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
-  font-weight: bolder;
+
+  font-size: 2rem;
   padding: 1rem 3.5rem;
   font-weight: bold;
 }
-
 .rate-us-button {
   border: 3px solid white;
   background: #ffffff00;
