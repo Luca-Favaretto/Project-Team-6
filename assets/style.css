@@ -4,6 +4,7 @@ body {
   background-repeat: no-repeat;
   color: white;
   font-family: "Outfit", sans-serif;
+  line-height: 1;
 }
 .container {
   width: 1000px;
@@ -56,7 +57,7 @@ ul li {
   margin: 0.5rem;
 }
 .logo {
-  width: 12rem;
+  width: 5rem;
   margin-top: 3rem;
 }
 
@@ -91,8 +92,9 @@ h3 {
   color: #c2128d;
 }
 
-ul {
-  padding: 0;
+.block-result {
+  display: inline-block;
+  width: 33%;
 }
 
 .wait-button-color {
