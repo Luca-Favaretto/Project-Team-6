@@ -7,6 +7,7 @@ body {
   font-family: "Outfit", sans-serif;
   line-height: 1;
   font-size: 16px;
+  font-family: "Outfit", sans-serif;
 }
 .container {
   width: 1000px;
@@ -27,12 +28,12 @@ body {
 /* Welcome */
 .h1-welcom {
   font-size: 4rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 0.8;
 }
 
 .h1-welcom b {
-  font-size: 3.8rem;
+  font-weight: 900;
   /* mettere un font diverso */
 }
 #proced-button {
@@ -43,8 +44,20 @@ body {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+ul {
+  padding-left: 1rem;
+}
+ul li {
+  margin: 0.5rem;
+}
+
+.form-welcome {
+  display: inline-block;
+  margin-right: 3rem;
+}
 
 #proced-button {
+  display: inline-block;
   background-color: #00ffff;
   border: none;
   -webkit-box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
@@ -52,13 +65,6 @@ body {
   font-size: 2rem;
   padding: 1rem 3.5rem;
   font-weight: bold;
-}
-
-ul {
-  padding-left: 1rem;
-}
-ul li {
-  margin: 0.5rem;
 }
 
 /* benchmark */
