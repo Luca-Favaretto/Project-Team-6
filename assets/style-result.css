@@ -1,3 +1,4 @@
+/* General  */
 body {
   background-image: url(../assets/bg.jpg);
   background-size: cover;
@@ -6,7 +7,7 @@ body {
   font-family: "Outfit", sans-serif;
   line-height: 1;
 }
-.conteiner {
+.container {
   width: 1000px;
   margin-inline: auto;
 }
@@ -15,38 +16,102 @@ body {
   width: 5rem;
   margin-top: 3rem;
 }
-h1 {
-  font-size: 3rem;
-}
 .text-align-center {
   text-align: center;
 }
 .text-align-right {
+  text-align: right;
+}
+
+/*  Welcome  */
+.h1-welcom {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 0.8;
+}
+
+.h1-welcom b {
+  font-size: 3.8rem;
+  /*  mettere un font diverso  */
+}
+#proced-button {
+  cursor: pointer;
+}
+.h3-welcome {
+  color: #c2128d;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#proced-button {
+  background-color: #00ffff;
+  border: none;
+  -webkit-box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
+  box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
+  font-size: 2rem;
+  padding: 1rem 3.5rem;
+  font-weight: bold;
+}
+
+/* / benchmark */
+.logo-beenchmark {
+  width: 10rem;
+  margin-top: 3rem;
+}
+.h1-beenchmark {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 6rem;
+  height: 8rem;
+}
+.botton-container {
   text-align: center;
 }
-
-.h3-result {
-  font-weight: 400;
+.wait-button-color {
+  background-color: #23294f;
+  font-size: 16px;
+  border-radius: 50px;
+  border: 4px solid;
+  border: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  border-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  border-image-slice: 1;
+  padding: 1rem;
+  display: inline-block;
+  width: 40%;
+  margin: 0.5rem;
+  border: 4px solid;
+  cursor: pointer;
 }
 
+.answer-button-color {
+  background: linear-gradient(180deg, rgba(210, 0, 148, 1) 21%, rgba(144, 0, 128, 1) 100%);
+  font-size: 16px;
+  border-radius: 50px;
+  border: 4px solid;
+  border-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  border-image-slice: 1;
+  padding: 1rem;
+  display: inline-block;
+  width: 40%;
+  margin: 0.5rem;
+  border: 4px solid;
+  cursor: pointer;
+}
+/* result page */
+.logo-beenchmark {
+  width: 10rem;
+  margin-top: 3rem;
+}
 .block-result {
   display: inline-block;
-  width: 33%;
+  width: 20%;
+  margin-inline: auto;
 }
-.block-result:nth-child(2) {
-  font-size: 1rem;
-}
-.block-result:nth-child(2) h4:nth-child(2) {
-  color: #00ffff;
-}
-
-.block-result:nth-child(2) .accent-color {
+.accent-color {
   color: #00ffff;
   font-size: 60px;
 }
-.block-result:nth-child(2) p {
-  font-size: 0.6rem;
-}
+
 .proced-button {
   background-color: #00ffff;
   border: none;
@@ -58,10 +123,20 @@ h1 {
   font-weight: bold;
 }
 .rate-us-button {
-  margin-top: 4rem;
-  border: 2px solid white;
+  border: 3px solid white;
   background: #ffffff00;
   color: white;
-  font-size: 1rem;
-  padding: 0.5rem 3rem 0.5rem;
+  font-size: 2rem;
+}
+
+.text-aling-center {
+  text-align: center;
+}
+.question-color {
+  color: #c2138c;
+}
+.question-footer {
+  margin-top: 6rem;
+  text-align: center;
+  font-size: 1.5rem;
 }
