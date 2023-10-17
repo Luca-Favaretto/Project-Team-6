@@ -1,117 +1,132 @@
 body {
-    /* background-image: url(../assets/bg.jpg); */
-    /* background-image: url(../assets/assets/s); */
-    background-image: url(./bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    font-family: "Outfit", sans-serif;
-  }
-  .container {
-    width: 1000px;
-    /* width: 100%; */
-    margin-inline: auto;
-  }
-  
-  .logo {
-    width: 12rem;
-    margin-top: 3rem;
-  }
-  h1 {
-    font-size: 5rem;
-  }
-  .text-align-center {
-    text-align: center;
-  }
-  .text-align-right {
-    text-align: center;
-  }
-  
-  h3 {
-    color: #c2128d;
-  }
-  
-  ul {
-    padding: 0;
-  }
-  
-  .wait-button-color {
-    background-color: #23294f;
-    font-size: 16px;
-    border-radius: 50px;
-    border: 4px solid;
-    border: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0) 100%);
-    padding: 1rem;
-    display: inline-block;
-    width: 40%;
-    margin: 0.5rem;
-  }
-  
-  .answer-button-color {
-    background: linear-gradient(180deg, rgba(210, 0, 148, 1) 21%, rgba(144, 0, 128, 1) 100%);
-    font-size: 16px;
-    border-radius: 50px;
-    border: 4px solid;
-    border-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0) 100%);
-    border-image-slice: 1;
-  }
-  
-  /* .rate-us-button {
+  /* background-image: url(../assets/bg.jpg); */
+  /* background-image: url(../assets/assets/s); */
+  background-image: url(./bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Outfit", sans-serif;
+}
+.container {
+  width: 1000px;
+  /* width: 100%; */
+  margin-inline: auto;
+}
+
+.logo {
+  width: 12rem;
+  margin-top: 3rem;
+}
+header {
+  text-align: left;
+}
+h1 {
+  font-size: 3rem;
+}
+
+.h2-feedback {
+  font-weight: 100;
+}
+.text-align-center {
+  text-align: center;
+}
+.text-align-right {
+  text-align: center;
+}
+
+#star-container {
+  text-align: center;
+}
+.star {
+  display: inline-block;
+  width: 5%;
+}
+
+.wait-button-color {
+  background-color: #23294f;
+  font-size: 16px;
+  border-radius: 50px;
+  border: 4px solid;
+  border: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  padding: 1rem;
+  display: inline-block;
+  width: 40%;
+  margin: 0.5rem;
+}
+
+.answer-button-color {
+  background: linear-gradient(
+    180deg,
+    rgba(210, 0, 148, 1) 21%,
+    rgba(144, 0, 128, 1) 100%
+  );
+  font-size: 16px;
+  border-radius: 50px;
+  border: 4px solid;
+  border-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  border-image-slice: 1;
+}
+
+/* .rate-us-button {
   } */
-  
-  .accent-color {
-    color: #00ffff;
-    font-size: 60px;
-  }
-  
-  .proced-button {
-    background-color: #00ffff;
-    border: none;
-    -webkit-box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
-    box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
-  
-    font-size: 2rem;
-    padding: 1rem 3.5rem;
-    font-weight: bold;
-  }
-  .rate-us-button {
-    border: 3px solid white;
-    background: #ffffff00;
-    color: white;
-    font-size: 2rem;
-  }
-  
-  .text-aling-center {
-    text-align: center;
-  }
-  .question-color{
-    color:#C2138C;
-  }
-  .question-footer {
-    margin-top: 6rem;
-    text-align: center;
-    font-size: 1.5rem;
-  }
-  .margin-top{
-    margin-top: 3rem;
-  }
-  .button-width{
-    margin-top: 3rem;
-    width: 10rem;
-    height: 3rem;
-  }
-  /* .comment-width{
+
+.accent-color {
+  color: #00ffff;
+  font-size: 60px;
+}
+
+.proced-button {
+  background-color: #00ffff;
+  border: none;
+  -webkit-box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
+  box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
+  font-weight: bolder;
+  padding: 1rem 3.5rem;
+  font-weight: bold;
+}
+
+.rate-us-button {
+  border: 3px solid white;
+  background: #ffffff00;
+  color: white;
+  font-size: 2rem;
+}
+
+.text-aling-center {
+  text-align: center;
+}
+.question-color {
+  color: #c2138c;
+}
+.question-footer {
+  margin-top: 6rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.margin-top {
+  margin-top: 3rem;
+}
+
+/* .comment-width{
     margin-top: 3rem;
     width: 40rem;
     height: 2rem;
     
   } */
-  .comment-width{
-    width: 40rem;
+.comment-width {
+  width: 40rem;
   padding: 10px 20px;
   border-color: transparent;
-  border-bottom: 1px solid #C2138C;
+  border-bottom: 2px solid #c2138c;
   font-size: 15px;
   background: transparent;
-    
-  }
+  margin-bottom: 2rem;
+}
