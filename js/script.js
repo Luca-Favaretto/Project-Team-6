@@ -6,3 +6,12 @@ setInterval(function () {
 
   numTimer.innerText--;
 }, 1000);
+
+const grafico = document.getElementById("grafico");
+let gradiRotazione = 0;
+
+function ruotaGrafico() {
+  gradiRotazione += 1;
+  grafico.style.transform = "rotate(${gradiRotazione}deg)";
+}
+setInterval(ruotaGrafico, 1000 / 60);
