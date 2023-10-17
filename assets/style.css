@@ -5,13 +5,11 @@ body {
   background-repeat: no-repeat;
   color: white;
   font-family: "Outfit", sans-serif;
-  /* line-height: 1; */
 }
 .container {
   width: 1000px;
   margin-inline: auto;
 }
-
 .logo {
   width: 8rem;
   margin-top: 3rem;
@@ -23,148 +21,16 @@ body {
   text-align: right;
 }
 
-/*  Wellcome  */
-.h1-welcom {
-  font-size: 4rem;
-  font-weight: 400;
-  line-height: 0.8;
-}
-
-.h1-welcom b {
-  font-size: 3.8rem;
-}
-#proced-button {
-  cursor: pointer;
-}
-.h3-welcome {
-  color: #c2128d;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-#proced-button {
-  background-color: #00ffff;
-  border: none;
-  -webkit-box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
-  box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
-}
-
-/* / benchmark */
-
-.logo-beenchmark {
-  width: 10rem;
-  margin-top: 3rem;
-}
-.h1-beenchmark {
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 6rem;
-  height: 8rem;
-}
-.botton-container {
-  text-align: center;
-}
-.wait-button-color {
-  background-color: #23294f;
-  font-size: 16px;
-  border-radius: 50px;
-  border: 4px solid;
-  border: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0) 100%);
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0) 100%);
-  border-image-slice: 1;
-  padding: 1rem;
-  display: inline-block;
-  width: 40%;
-  margin: 0.5rem;
-  border: 4px solid;
-  cursor: pointer;
-}
-
-.answer-button-color {
-  background: linear-gradient(180deg, rgba(210, 0, 148, 1) 21%, rgba(144, 0, 128, 1) 100%);
-  font-size: 16px;
-  border-radius: 50px;
-  border: 4px solid;
-  border-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0) 100%);
-  border-image-slice: 1;
-  padding: 1rem;
-  display: inline-block;
-  width: 40%;
-  margin: 0.5rem;
-  border: 4px solid;
-  cursor: pointer;
-}
-/* result page */
-
-.block-result {
-  display: inline-block;
-  width: 33%;
-  font-size: 1.5rem;
-}
-.block-result:nth-child(2) {
-  font-size: 1.7rem;
-}
-.block-result:nth-child(2) h4:nth-child(2) {
-  color: #00ffff;
-}
-
-.block-result:nth-child(2) .accent-color {
-  color: #00ffff;
-  font-size: 60px;
-}
-.block-result:nth-child(2) p {
-  font-size: 1rem;
-}
-
-.resultText {
-  margin-inline: block;
-  margin-top: 6rem;
-  margin-bottom: 0rem;
-}
-.resultText + h4 {
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-}
-.rate-us-button {
-  border: 3px solid white;
-  background: #ffffff00;
-  color: white;
-  font-size: 2rem;
-  margin-top: 4rem;
-  cursor: pointer;
-}
-
-.accent-color {
-  color: #00ffff;
-  font-size: 60px;
-}
-
-.proced-button {
-  background-color: #00ffff;
-  border: none;
-  -webkit-box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
-  box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
-
-  font-size: 2rem;
-  padding: 1rem 3.5rem;
-  font-weight: bold;
-}
-
-.question-color {
-  color: #c2138c;
-}
-.question-footer {
-  margin-top: 6rem;
-  text-align: center;
-  font-size: 1.5rem;
-}
 /* feedback */
 
 .h1Feedback {
   font-size: 4rem;
   margin-top: 7rem;
 }
-
+.h2-feedback {
+  text-align: center;
+  margin-top: 4rem;
+}
 #star-container {
   text-align: center;
 }
@@ -179,11 +45,6 @@ body {
 .star-gray:hover {
   filter: none;
 }
-.h2-feedback {
-  text-align: center;
-  margin-top: 4rem;
-}
-
 .comment-width {
   width: 40rem;
   padding: 10px 20px;
@@ -193,4 +54,20 @@ body {
   background: transparent;
   margin-bottom: 2rem;
   color: aliceblue;
+}
+#proced-button {
+  background-color: #00ffff;
+  border: none;
+  -webkit-box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
+  box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
+}
+.proced-button {
+  background-color: #00ffff;
+  border: none;
+  -webkit-box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
+  box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
+
+  font-size: 2rem;
+  padding: 1rem 3.5rem;
+  font-weight: bold;
 }
