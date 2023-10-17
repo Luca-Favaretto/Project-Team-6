@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
-    <main class="conteiner">
+    <main class="container">
       <header>
         <img
           class="logo"
@@ -44,10 +44,12 @@
       </main>
       <footer>
         <div>
-          <input type="checkbox" id="accettazioneCondizioni" />
-          <label for="for-checkbox"
-            >I promise to answer myself without help from anyone</label
-          >
+          <form action="submit">
+            <input type="checkbox" required />
+            <label for="for-checkbox"
+              >I promise to answer myself without help from anyone</label
+            >
+          </form>
         </div>
         <div>
           <button id="proced-button" type="submit" disabled>PROCEED</button>
