@@ -64,10 +64,7 @@ body {
   margin-bottom: 6rem;
   height: 8rem;
 }
-#myPieChart {
-  width: 150px;
-  height: 150px;
-}
+
 .timer {
   float: right;
   margin: 2rem 2rem 0 0;
