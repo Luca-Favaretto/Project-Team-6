@@ -7,11 +7,11 @@ setInterval(function () {
   numTimer.innerText--;
 }, 1000);
 
-const grafico = document.getElementById("grafico");
-let gradiRotazione = 0;
+const circle = document.querySelector(".circle");
+let degrees = 0;
 
-function ruotaGrafico() {
-  gradiRotazione += 1;
-  grafico.style.transform = "rotate(${gradiRotazione}deg)";
+function rotateCircle() {
+  degrees += 1;
+  circle.style.transform = "translate(-50%, -50%) rotate(${degrees}deg)";
 }
-setInterval(ruotaGrafico, 1000 / 60);
+setInterval(rotateCircle, 20);
