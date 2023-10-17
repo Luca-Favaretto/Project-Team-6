@@ -10,22 +10,3 @@ setInterval(function () {
 
   numTimer.innerText--;
 }, 1000);
-
-let myCanvas = document.getElementById("myPieChart").getContext("2d");
-let myLabels = ["Rimanente", "Passato"];
-let myDati = [numTimer.innerText, 60 - numTimer.innerText];
-
-let chart = new Chart(myCanvas, {
-  type: "doughnut",
-  data: {
-    labels: myLabels,
-    datasets: [
-      {
-        label: "time",
-        data: myDati,
-        backroundColor: ["red", "green"]
-      }
-    ]
-  },
-  option
-});
