@@ -176,6 +176,13 @@ footer label {
 .margin-top {
   margin-top: 3rem;
 }
+#ceckbox-welcome{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  vertical-align: bottom;
+  
+}
 
 .comment-width {
   width: 40rem;
