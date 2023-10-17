@@ -5,7 +5,7 @@ body {
   background-repeat: no-repeat;
   color: white;
   font-family: "Outfit", sans-serif;
-  line-height: 1;
+  /* line-height: 1; */
 }
 .container {
   width: 1000px;
@@ -13,7 +13,7 @@ body {
 }
 
 .logo {
-  width: 5rem;
+  width: 8rem;
   margin-top: 3rem;
 }
 .text-align-center {
@@ -23,10 +23,7 @@ body {
   text-align: right;
 }
 
-.text-aling-center {
-  text-align: center;
-}
-/*  Welcome  */
+/*  Wellcome  */
 .h1-welcom {
   font-size: 4rem;
   font-weight: 400;
@@ -35,7 +32,6 @@ body {
 
 .h1-welcom b {
   font-size: 3.8rem;
-  /*  mettere un font diverso  */
 }
 #proced-button {
   cursor: pointer;
@@ -51,12 +47,10 @@ body {
   border: none;
   -webkit-box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
   box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
-  font-size: 2rem;
-  padding: 1rem 3.5rem;
-  font-weight: bold;
 }
 
 /* / benchmark */
+
 .logo-beenchmark {
   width: 10rem;
   margin-top: 3rem;
@@ -101,8 +95,6 @@ body {
   cursor: pointer;
 }
 /* result page */
-
-/* logo è stato implementato dal beenchmark precedente */
 
 .block-result {
   display: inline-block;
@@ -165,4 +157,40 @@ body {
   margin-top: 6rem;
   text-align: center;
   font-size: 1.5rem;
+}
+/* feedback */
+
+.h1Feedback {
+  font-size: 4rem;
+  margin-top: 7rem;
+}
+
+#star-container {
+  text-align: center;
+}
+.star {
+  display: inline-block;
+  width: 4%;
+  margin: 0.3rem;
+}
+.star-gray {
+  filter: contrast(0%);
+}
+.star-gray:hover {
+  filter: none;
+}
+.h2-feedback {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.comment-width {
+  width: 40rem;
+  padding: 10px 20px;
+  border-color: transparent;
+  border-bottom: 2px solid #c2138c;
+  font-size: 15px;
+  background: transparent;
+  margin-bottom: 2rem;
+  color: aliceblue;
 }
