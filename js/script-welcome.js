@@ -5,11 +5,3 @@ btnProced.addEventListener("click", function () {
     ? (window.location.href = "benckmarck-page.html")
     : console.log("da ceckare");
 });
-
-// ("change", function () {
-//   if (checkbox.checked) {
-//     proceedButton.disabled = false;
-//   } else {
-//     proceedButton.disabled = true;
-//   }
-// });
