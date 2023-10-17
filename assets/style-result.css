@@ -88,8 +88,8 @@ h1 {
   text-align: center;
 }
 
-h3 {
-  color: #c2128d;
+.h3-result {
+  font-weight: 400;
 }
 
 .block-result {
@@ -130,11 +130,20 @@ h3 {
   border-image-slice: 1;
 }
 
-.accent-color {
+.block-result:nth-child(2) {
+  font-size: 1rem;
+}
+.block-result:nth-child(2) h4:nth-child(2) {
+  color: #00ffff;
+}
+
+.block-result:nth-child(2) .accent-color {
   color: #00ffff;
   font-size: 60px;
 }
-
+.block-result:nth-child(2) p {
+  font-size: 0.6rem;
+}
 .proced-button {
   background-color: #00ffff;
   border: none;
