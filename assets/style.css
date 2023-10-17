@@ -112,6 +112,10 @@ header {
 header {
   text-align: left;
 }
+.timer {
+  float: right;
+  margin: 2rem 2rem 0 0;
+}
 
 .h2-feedback {
   font-weight: 100;
