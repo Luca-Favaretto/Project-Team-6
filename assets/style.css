@@ -18,6 +18,65 @@ body {
   width: 8rem;
   margin-top: 3rem;
 }
+/* Welcome */
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 0.8;
+}
+
+h1 b {
+  font-size: 3.8rem;
+  /* mettere un font diverso */
+}
+#proced-button {
+  cursor: pointer;
+}
+h3 {
+  color: #c2128d;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.h3-result {
+  font-weight: 400;
+}
+.block-result {
+  display: inline-block;
+  width: 33%;
+}
+.block-result:nth-child(2) {
+  font-size: 1rem;
+}
+.block-result:nth-child(2) h4:nth-child(2) {
+  color: #00ffff;
+}
+.block-result:nth-child(2) .accent-color {
+  color: #00ffff;
+  font-size: 60px;
+}
+.block-result:nth-child(2) p {
+  font-size: 0.6rem;
+}
+ul {
+  padding-left: 1rem;
+}
+ul li {
+  margin: 0.5rem;
+}
+
+header {
+  text-align: left;
+}
+.h1-welcom {
+  font-size: 3rem;
+}
+.h1-welcom b {
+  font-weight: 10rem;
+  color: red;
+}
+.h2-feedback {
+  font-weight: 100;
+}
 .text-align-center {
   text-align: center;
 }
@@ -113,6 +172,7 @@ header {
     rgba(0, 0, 0, 0) 100%
   );
   border-image-slice: 1;
+
   padding: 1rem;
   display: inline-block;
   width: 40%;
