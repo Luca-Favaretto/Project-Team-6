@@ -23,6 +23,9 @@ body {
   text-align: right;
 }
 
+.text-aling-center {
+  text-align: center;
+}
 /*  Welcome  */
 .h1-welcom {
   font-size: 4rem;
@@ -98,15 +101,47 @@ body {
   cursor: pointer;
 }
 /* result page */
-.logo-beenchmark {
-  width: 10rem;
-  margin-top: 3rem;
-}
+
+/* logo è stato implementato dal beenchmark precedente */
+
 .block-result {
   display: inline-block;
-  width: 20%;
-  margin-inline: auto;
+  width: 33%;
+  font-size: 1.5rem;
 }
+.block-result:nth-child(2) {
+  font-size: 1.7rem;
+}
+.block-result:nth-child(2) h4:nth-child(2) {
+  color: #00ffff;
+}
+
+.block-result:nth-child(2) .accent-color {
+  color: #00ffff;
+  font-size: 60px;
+}
+.block-result:nth-child(2) p {
+  font-size: 1rem;
+}
+
+.resultText {
+  margin-inline: block;
+  margin-top: 6rem;
+  margin-bottom: 0rem;
+}
+.resultText + h4 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+.rate-us-button {
+  border: 3px solid white;
+  background: #ffffff00;
+  color: white;
+  font-size: 2rem;
+  margin-top: 4rem;
+  cursor: pointer;
+}
+
 .accent-color {
   color: #00ffff;
   font-size: 60px;
@@ -122,16 +157,7 @@ body {
   padding: 1rem 3.5rem;
   font-weight: bold;
 }
-.rate-us-button {
-  border: 3px solid white;
-  background: #ffffff00;
-  color: white;
-  font-size: 2rem;
-}
 
-.text-aling-center {
-  text-align: center;
-}
 .question-color {
   color: #c2138c;
 }
