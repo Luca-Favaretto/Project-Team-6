@@ -19,19 +19,16 @@ body {
   margin-top: 3rem;
 }
 /* Welcome */
-h1 {
+.h1-welcom {
   font-size: 4rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 0.8;
 }
 
-h1 b {
-  font-size: 3.8rem;
-  /* mettere un font diverso */
+.h1-welcom b {
+  font-weight: 900;
 }
-#proced-button {
-  cursor: pointer;
-}
+
 h3 {
   color: #c2128d;
   font-size: 2rem;
@@ -84,30 +81,10 @@ header {
   text-align: right;
 }
 
-/* Welcome */
-.h1-welcom {
-  font-size: 4rem;
-  font-weight: 300;
-  line-height: 0.8;
-}
-
-.h1-welcom b {
-  font-weight: 900;
-  /* mettere un font diverso */
-}
-#proced-button {
-  cursor: pointer;
-}
 .h3-welcome {
   color: #c2128d;
   font-size: 2rem;
   margin-bottom: 1rem;
-}
-ul {
-  padding-left: 1rem;
-}
-ul li {
-  margin: 0.5rem;
 }
 
 .form-welcome {
@@ -124,6 +101,7 @@ ul li {
   font-size: 2rem;
   padding: 1rem 3.5rem;
   font-weight: bold;
+  cursor: pointer;
 }
 
 /* benchmark */
