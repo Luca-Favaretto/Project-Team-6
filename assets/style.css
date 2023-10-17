@@ -100,11 +100,7 @@ ul {
   font-size: 16px;
   border-radius: 50px;
   border: 4px solid;
-  border: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  border: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0) 100%);
 
   padding: 1rem;
   display: inline-block;
@@ -112,19 +108,11 @@ ul {
   margin: 0.5rem;
 }
 .answer-button-color {
-  background: linear-gradient(
-    180deg,
-    rgba(210, 0, 148, 1) 21%,
-    rgba(144, 0, 128, 1) 100%
-  );
+  background: linear-gradient(180deg, rgba(210, 0, 148, 1) 21%, rgba(144, 0, 128, 1) 100%);
   font-size: 16px;
   border-radius: 50px;
   border: 4px solid;
-  border-image: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  border-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0) 100%);
   border-image-slice: 1;
 }
 
@@ -176,12 +164,11 @@ footer label {
 .margin-top {
   margin-top: 3rem;
 }
-#ceckbox-welcome{
+#ceckbox-welcome {
   width: 20px;
   height: 20px;
   cursor: pointer;
   vertical-align: bottom;
-  
 }
 
 .comment-width {
