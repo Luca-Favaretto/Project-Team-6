@@ -1,17 +1,16 @@
 body {
-  /* background-image: url(../assets/bg.jpg); */
-
-  background-image: url(./bg.jpg);
+  background-image: url(../assets/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
   font-family: "Outfit", sans-serif;
+  line-height: 1;
 }
-.container {
+.conteiner {
   width: 1000px;
-  /* width: 100%; */
   margin-inline: auto;
 }
+
 .logo {
   width: 5rem;
   margin-top: 3rem;
