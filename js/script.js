@@ -10,6 +10,21 @@
 // feedback
 
 const starContainer = document.getElementById("star-container");
-console.log("starContainer");
-const starImg = document.getElementByClass("star");
-console.log("starImg");
+console.log(starContainer);
+const starImg = Array.from(document.getElementsByClassName("star"));
+console.log(starImg);
+
+// starImg.forEach(img => {
+//   img.onclick(img.classList.remove("star-gray"));
+// });
+
+starImg.forEach(img => {
+  img.addEventListener("click", function (e) {
+    const indexImg = starImg.indexOf(e.target);
+    console.log(indexImg);
+
+    for (let i = 0; i < indexImg + 1; i++) {
+      starImg[i].classList.remove("star-gray");
+    }
+  });
+});

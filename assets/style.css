@@ -39,7 +39,15 @@ h1 {
 }
 .star {
   display: inline-block;
-  width: 5%;
+  width: 4%;
+  margin: 0.3rem;
+}
+.star-gray {
+  filter: contrast(0%);
+}
+
+.star-gray:hover {
+  filter: none;
 }
 
 .wait-button-color {
