@@ -1,77 +1,20 @@
-/* General */
+/* General  */
 body {
-  background-image: url(./bg.jpg);
+  background-image: url(../assets/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
   font-family: "Outfit", sans-serif;
+  line-height: 1;
 }
 .container {
   width: 1000px;
   margin-inline: auto;
 }
+
 .logo {
   width: 8rem;
   margin-top: 3rem;
-}
-/* Welcome */
-h1 {
-  font-size: 4rem;
-  font-weight: 400;
-  line-height: 0.8;
-}
-
-h1 b {
-  font-size: 3.8rem;
-  /* mettere un font diverso */
-}
-#proced-button {
-  cursor: pointer;
-}
-h3 {
-  color: #c2128d;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-.h3-result {
-  font-weight: 400;
-}
-.block-result {
-  display: inline-block;
-  width: 33%;
-}
-.block-result:nth-child(2) {
-  font-size: 1rem;
-}
-.block-result:nth-child(2) h4:nth-child(2) {
-  color: #00ffff;
-}
-.block-result:nth-child(2) .accent-color {
-  color: #00ffff;
-  font-size: 60px;
-}
-.block-result:nth-child(2) p {
-  font-size: 0.6rem;
-}
-ul {
-  padding-left: 1rem;
-}
-ul li {
-  margin: 0.5rem;
-}
-
-header {
-  text-align: left;
-}
-.h1-welcom {
-  font-size: 3rem;
-}
-.h1-welcom b {
-  font-weight: 10rem;
-  color: red;
-}
-.h2-feedback {
-  font-weight: 100;
 }
 .text-align-center {
   text-align: center;
@@ -80,51 +23,97 @@ header {
   text-align: right;
 }
 
-#star-container {
-  text-align: center;
+/*  Welcome  */
+.h1-welcom {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 0.8;
 }
-.star {
-  display: inline-block;
-  width: 5%;
 
-  text-align: center;
+.h1-welcom b {
+  font-size: 3.8rem;
+  /*  mettere un font diverso  */
+}
+.inline-block {
+  display: inline-block;
 }
 
 .h3-welcome {
   color: #c2128d;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
+#proced-button {
+  cursor: pointer;
+  background-color: #00ffff;
+
+  border: none;
+  -webkit-box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
+  box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
+  font-size: 2rem;
+  padding: 1rem 3.5rem;
+  font-weight: bold;
+}
+
+/* / benchmark */
+.logo-beenchmark {
+  width: 10rem;
+  margin-top: 3rem;
+}
+.h1-beenchmark {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 6rem;
+  height: 8rem;
+}
+.circle {
+  width: 100px;
+  height: 200px;
+  background-color: #00ffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 1s linear;
+}
+
+.timer {
+  float: right;
+  margin: 2rem 2rem 0 0;
+}
 .wait-button-color {
+  color: white;
   background-color: #23294f;
   font-size: 16px;
   border-radius: 50px;
   border: 4px solid;
-  border: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-
+  border: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  border-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  border-image-slice: 1;
   padding: 1rem;
   display: inline-block;
   width: 40%;
-  margin: 0.5rem;
+  margin: 1rem;
+  border: 4px solid;
+  cursor: pointer;
 }
+
 .answer-button-color {
-  background: linear-gradient(
-    180deg,
-    rgba(210, 0, 148, 1) 21%,
-    rgba(144, 0, 128, 1) 100%
-  );
+  color: white;
+  background: linear-gradient(180deg, rgba(210, 0, 148, 1) 21%, rgba(144, 0, 128, 1) 100%);
   font-size: 16px;
   border-radius: 50px;
   border: 4px solid;
-  border-image: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  border-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0) 100%);
   border-image-slice: 1;
+  padding: 1rem;
+  display: inline-block;
+  width: 40%;
+  margin: 1rem;
+  border: 4px solid;
+  cursor: pointer;
 }
 
 .accent-color {
@@ -132,18 +121,7 @@ header {
   font-size: 60px;
 }
 
-#proced-button {
-  background-color: #00ffff;
-  border: none;
-  -webkit-box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
-  box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
-  font-weight: bolder;
-  font-size: 1.5rem;
-  padding: 1rem 3.5rem;
-  font-weight: bold;
-  margin-left: 12rem;
-}
-/* .proced-button {
+.proced-button {
   background-color: #00ffff;
   border: none;
   -webkit-box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
@@ -152,16 +130,12 @@ header {
   font-size: 2rem;
   padding: 1rem 3.5rem;
   font-weight: bold;
-} */
-footer div {
-  display: inline-block;
 }
-footer label {
-  font-weight: 600;
-}
-
-.text-aling-center {
-  text-align: center;
+.rate-us-button {
+  border: 3px solid white;
+  background: #ffffff00;
+  color: white;
+  font-size: 2rem;
 }
 
 .question-color {
@@ -171,31 +145,4 @@ footer label {
   margin-top: 6rem;
   text-align: center;
   font-size: 1.5rem;
-}
-.margin-top {
-  margin-top: 3rem;
-}
-#ceckbox-welcome {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  vertical-align: bottom;
-}
-
-.comment-width {
-  width: 40rem;
-  padding: 10px 20px;
-  border-color: transparent;
-  border-bottom: 2px solid #c2138c;
-  font-size: 15px;
-  background: transparent;
-  margin-bottom: 2rem;
-}
-.rate-us-button {
-  margin-top: 4rem;
-  border: 2px solid white;
-  background: #ffffff00;
-  color: white;
-  font-size: 1rem;
-  padding: 0.5rem 3rem 0.5rem;
 }
