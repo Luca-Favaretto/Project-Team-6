@@ -87,13 +87,7 @@ ul li {
 header {
   text-align: left;
 }
-.h1-welcom {
-  font-size: 3rem;
-}
-.h1-welcom b {
-  font-weight: 10rem;
-  color: red;
-}
+
 .h2-feedback {
   font-weight: 100;
 }
