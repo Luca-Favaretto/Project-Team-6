@@ -25,8 +25,8 @@ h1 {
   text-align: center;
 }
 
-h3 {
-  color: #c2128d;
+.h3-result {
+  font-weight: 400;
 }
 
 .block-result {
@@ -34,14 +34,19 @@ h3 {
   width: 33%;
 }
 .block-result:nth-child(2) {
-  color: red;
+  font-size: 1rem;
+}
+.block-result:nth-child(2) h4:nth-child(2) {
+  color: #00ffff;
 }
 
-.accent-color {
+.block-result:nth-child(2) .accent-color {
   color: #00ffff;
   font-size: 60px;
 }
-
+.block-result:nth-child(2) p {
+  font-size: 0.6rem;
+}
 .proced-button {
   background-color: #00ffff;
   border: none;
@@ -54,9 +59,9 @@ h3 {
 }
 .rate-us-button {
   margin-top: 4rem;
-  border: 3px solid white;
+  border: 2px solid white;
   background: #ffffff00;
   color: white;
   font-size: 1rem;
-  padding: 1rem 3rem 1rem;
+  padding: 0.5rem 3rem 0.5rem;
 }
