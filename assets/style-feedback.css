@@ -24,19 +24,22 @@ body {
 /* feedback */
 
 .h1Feedback {
-  font-size: 4rem;
-  margin-top: 7rem;
+  font-size: 3.2rem;
+  margin-top: 5rem;
+  margin-bottom: 0;
 }
 .h2-feedback {
   text-align: center;
   margin-top: 4rem;
+  font-weight: 400;
 }
+
 #star-container {
   text-align: center;
 }
 .star {
   display: inline-block;
-  width: 4%;
+  width: 4.5%;
   margin: 0.3rem;
 }
 .star-gray {
@@ -55,19 +58,12 @@ body {
   margin-bottom: 2rem;
   color: aliceblue;
 }
-#proced-button {
+#btn-more-info {
   background-color: #00ffff;
   border: none;
   -webkit-box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
   box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
-}
-.proced-button {
-  background-color: #00ffff;
-  border: none;
-  -webkit-box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
-  box-shadow: 0px 0px 23px 15px rgba(0, 255, 255, 0.44);
-
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 1rem 3.5rem;
   font-weight: bold;
 }
