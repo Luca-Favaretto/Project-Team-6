@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/normalized.css" />
+    <link rel="stylesheet" href="./assets/style-feedback.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <main class="container text-align-center">
+    <main class="container">
       <header>
-        <!-- logo -->
         <img
           class="logo"
           src="./assets/epicode_logo.png"
@@ -18,72 +24,59 @@
         />
       </header>
 
-      <h1 class="text-align-center">Tell us how it's going</h1>
+      <h1 class="text-align-center h1-feedback">Tell us how it's going</h1>
       <h2 class="h2-feedback text-align-center">
         From 0 to 10, how likely are you to recomended EPICODE <br />to a friend
         or a colleagua?
       </h2>
-      <!-- recensione -->
-      <!-- <script>
-        for (let i = 0; i < 10; i++) {
-          const stella = document.getElementById("stella");
-          //stella.innerText("");
-          console.log(stella)
-        }
-      </script> -->
       <div id="star-container">
         <img
-          class="star"
+          class="star star-gray"
           src="./assets/star.svg"
           alt="stella della recenzione"
         />
         <img
-          class="star"
+          class="star star-gray"
           src="./assets/star.svg"
           alt="stella della recenzione"
         />
         <img
-          class="star"
+          class="star star-gray"
           src="./assets/star.svg"
           alt="stella della recenzione"
         />
         <img
-          class="star"
+          class="star star-gray"
           src="./assets/star.svg"
           alt="stella della recenzione"
         />
         <img
-          class="star"
+          class="star star-gray"
           src="./assets/star.svg"
           alt="stella della recenzione"
         />
         <img
-          class="star"
+          class="star star-gray"
           src="./assets/star.svg"
           alt="stella della recenzione"
         />
         <img
-          class="star"
+          class="star star-gray"
           src="./assets/star.svg"
           alt="stella della recenzione"
         />
         <img
-          class="star"
+          class="star star-gray"
           src="./assets/star.svg"
           alt="stella della recenzione"
         />
         <img
-          class="star"
+          class="star star-gray"
           src="./assets/star.svg"
           alt="stella della recenzione"
         />
         <img
-          class="star"
-          src="./assets/star.svg"
-          alt="stella della recenzione"
-        />
-        <img
-          class="star"
+          class="star star-gray"
           src="./assets/star.svg"
           alt="stella della recenzione"
         />
@@ -95,17 +88,16 @@
         Leave us an open feedback about your experience so far
       </h2>
       <div>
-        <div>
+        <div class="text-align-center">
           <input
             class="comment-width"
             type="text"
             placeholder="Write your comment here"
           />
         </div>
-        <button class="button-width proced-button" type="submit" class="">
-          MORE INFO
-        </button>
+        <button id="btn-more-info" type="submit">MORE INFO</button>
       </div>
     </main>
+    <script src="./js/script-feedback.js"></script>
   </body>
 </html>
