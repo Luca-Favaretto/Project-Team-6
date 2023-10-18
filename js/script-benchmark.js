@@ -94,7 +94,7 @@ const questions = [
   }
 ];
 
-let count = 0;
+let countPunteggio = 0;
 const createBenchmark = function (e) {
   const questionDiv = document.getElementById("question-div");
   const answerDiv = document.getElementById("answer-div");
@@ -106,11 +106,17 @@ const createBenchmark = function (e) {
   const firstBtn = document.createElement("button");
   firstBtn.innerText = questions[9].correct_answer;
   firstBtn.classList = "wait-button-color";
+  firstBtn.addEventListener("click", function () {
+    firstBtn.classList = "answer-button-color";
+  });
 
   questions[9].incorrect_answers.forEach(string => {
     const btn = document.createElement("button");
     btn.classList = "wait-button-color";
     btn.innerText = string;
+    btn.addEventListener("click", function () {
+      btn.classList = "answer-button-color";
+    });
     answerDiv.appendChild(btn);
   });
 
@@ -118,7 +124,7 @@ const createBenchmark = function (e) {
 
   questionDiv.appendChild(question);
 };
-
+createBenchmark();
 // const secondBtn = document.createElement("button");
 // secondBtn.classList = "wait-button-color";
 // secondBtn.innerText = questions[9].incorrect_answers[0];
