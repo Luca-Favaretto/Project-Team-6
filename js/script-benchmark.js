@@ -101,9 +101,9 @@ let countQuestion = 0;
 //funzione che crea la benchmark
 const createBenchmark = function () {
   if (countQuestion >= questions.length) {
-    console.log("fine benchmark");
+    window.location.href = "result-page.html";
   }
-  console.log("risposte esatte" + countPoint);
+
   //trovato div per collegare la pagina
   const numCorr = document.getElementById("beenchmark-footer");
   const questionDiv = document.getElementById("question-div");
