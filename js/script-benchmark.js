@@ -94,67 +94,78 @@ const questions = [
   }
 ];
 
-let countPunteggio = 0;
-const createBenchmark = function (e) {
+//per salvare dati
+let countPoint = 0;
+let countQuestion = 0;
+
+//funzione che crea la benchmark
+const createBenchmark = function () {
+  if (countQuestion >= questions.length) {
+    console.log("fine benchmark");
+  }
+  console.log("risposte esatte" + countPoint);
+  //trovato div per collegare la pagina
+  const numCorr = document.getElementById("beenchmark-footer");
   const questionDiv = document.getElementById("question-div");
   const answerDiv = document.getElementById("answer-div");
 
-  const question = document.createElement("h1");
-  question.innerText = questions[9].question;
-  question.classList = "h1-beenchmark";
+  while (questionDiv.firstChild) {
+    questionDiv.removeChild(questionDiv.firstChild);
+  }
+  while (answerDiv.firstChild) {
+    answerDiv.removeChild(answerDiv.firstChild);
+  }
 
+  //creazione domande
+  const question = document.createElement("h1");
+  question.innerText = questions[countQuestion].question;
+  question.classList = "h1-beenchmark";
+  questionDiv.appendChild(question);
+
+  //creazione risposta corretta
   const firstBtn = document.createElement("button");
-  firstBtn.innerText = questions[9].correct_answer;
+  firstBtn.innerText = questions[countQuestion].correct_answer;
   firstBtn.classList = "wait-button-color";
+  answerDiv.appendChild(firstBtn);
+
+  //AGGIUTA FUNZIONE DI CLICK alla risposta corretta
+
   firstBtn.addEventListener("click", function () {
     firstBtn.classList = "answer-button-color";
-  });
+    countPoint++;
+    countQuestion++;
 
-  questions[9].incorrect_answers.forEach(string => {
+    numCorr.innerText = `QUESTION ${countQuestion + 1}`;
+    setTimeout(function () {
+      createBenchmark();
+    }, 300);
+    const resetTimer = (numTimer.textContent = "60");
+  });
+  //creazione risposte/a sbagliate
+  questions[countQuestion].incorrect_answers.forEach(string => {
     const btn = document.createElement("button");
     btn.classList = "wait-button-color";
     btn.innerText = string;
+    //AGGIUTA FUNZIONE DI CLICK alla risposta sbagliata
     btn.addEventListener("click", function () {
       btn.classList = "answer-button-color";
+
+      countQuestion++;
+      setTimeout(1000);
+      numCorr.innerText = `QUESTION ${countQuestion + 1}`;
+      setTimeout(function () {
+        createBenchmark();
+      }, 300);
+      const resetTimer = (numTimer.textContent = "60");
     });
     answerDiv.appendChild(btn);
   });
-
-  answerDiv.appendChild(firstBtn);
-
-  questionDiv.appendChild(question);
 };
 createBenchmark();
-// const secondBtn = document.createElement("button");
-// secondBtn.classList = "wait-button-color";
-// secondBtn.innerText = questions[9].incorrect_answers[0];
-// const thirdBtn = document.createElement("button");
-// thirdBtn.classList = "wait-button-color";
-// thirdBtn.innerText = questions[9].incorrect_answers[1];
-// const fourthBtn = document.createElement("button");
-// fourthBtn.classList = "wait-button-color";
-// fourthBtn.innerText = questions[9].incorrect_answers[2];
-
-// answerDiv.appendChild(secondBtn);
-// answerDiv.appendChild(thirdBtn);
-// answerDiv.appendChild(fourthBtn);
 
 window.onload = function () {
   const interval = setInterval(updateTimer, 1000);
 
-  const correctAnswer = [];
-  const removeAnswerButton = () => {
-    btn.classList.remove("answer-button-color");
-  };
-
-  //aggiunge span question num
-  const numQuestions = document.getElementById("beenchmark-footer");
-  const numCorr = document.createElement("span");
-  numCorr.innerText = `QUESTION ${0}`;
-  numCorr.classList = "question-color";
-  numQuestions.appendChild(numCorr);
-
-  //timer
   const donutSegment = document.querySelector(".donut-segment");
 
   function updateDashArray(value) {
