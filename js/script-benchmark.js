@@ -94,34 +94,44 @@ const questions = [
   }
 ];
 
+let count = 0;
 const createBenchmark = function (e) {
-  e.preventDefault();
   const questionDiv = document.getElementById("question-div");
   const answerDiv = document.getElementById("answer-div");
 
   const question = document.createElement("h1");
-  question.innerText = questions[0].question;
-  question.classList = "wait-button-color";
+  question.innerText = questions[9].question;
+  question.classList = "h1-beenchmark";
 
   const firstBtn = document.createElement("button");
-  firstBtn.innerText = arrayAnswer[0].string[0];
+  firstBtn.innerText = questions[9].correct_answer;
   firstBtn.classList = "wait-button-color";
-  const secondBtn = document.createElement("button");
-  secondBtn.classList = "wait-button-color";
-  secondBtn.innerText = arrayAnswer[0].string[1];
-  const thirdBtn = document.createElement("button");
-  thirdBtn.classList = "wait-button-color";
-  thirdBtn.innerText = arrayAnswer[0].string[2];
-  const fourthBtn = document.createElement("button");
-  fourthBtn.classList = "wait-button-color";
-  fourthBtn.innerText = arrayAnswer[0].string[3];
 
-  questionDiv.appendChild(arrayQuestion[0]);
+  questions[9].incorrect_answers.forEach(string => {
+    const btn = document.createElement("button");
+    btn.classList = "wait-button-color";
+    btn.innerText = string;
+    answerDiv.appendChild(btn);
+  });
+
   answerDiv.appendChild(firstBtn);
-  answerDiv.appendChild(secondBtn);
-  answerDiv.appendChild(thirdBtn);
-  answerDiv.appendChild(fourthBtn);
+
+  questionDiv.appendChild(question);
 };
+
+// const secondBtn = document.createElement("button");
+// secondBtn.classList = "wait-button-color";
+// secondBtn.innerText = questions[9].incorrect_answers[0];
+// const thirdBtn = document.createElement("button");
+// thirdBtn.classList = "wait-button-color";
+// thirdBtn.innerText = questions[9].incorrect_answers[1];
+// const fourthBtn = document.createElement("button");
+// fourthBtn.classList = "wait-button-color";
+// fourthBtn.innerText = questions[9].incorrect_answers[2];
+
+// answerDiv.appendChild(secondBtn);
+// answerDiv.appendChild(thirdBtn);
+// answerDiv.appendChild(fourthBtn);
 
 window.onload = function () {
   const interval = setInterval(updateTimer, 1000);
@@ -131,12 +141,13 @@ window.onload = function () {
     btn.classList.remove("answer-button-color");
   };
 
+  //aggiunge span question num
   const numQuestions = document.getElementById("beenchmark-footer");
-  console.log(numQuestions);
   const numCorr = document.createElement("span");
-  numCorr.innerText = "QUESTION 0";
+  numCorr.innerText = `QUESTION ${0}`;
   numCorr.classList = "question-color";
   numQuestions.appendChild(numCorr);
+
   //timer
   const donutSegment = document.querySelector(".donut-segment");
 
