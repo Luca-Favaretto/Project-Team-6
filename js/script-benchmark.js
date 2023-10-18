@@ -173,7 +173,7 @@ window.onload = function () {
   }
 
   function updateTimer() {
-    const currentValue = parseInt(numTimer.textContent, 10);
+    const currentValue = parseInt(numTimer.textContent);
     if (currentValue > 0) {
       numTimer.textContent = (currentValue - 1).toString();
       const percentComplete = ((60 - currentValue) / 60) * 100;
