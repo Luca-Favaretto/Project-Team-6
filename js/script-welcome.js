@@ -5,3 +5,4 @@ btnProced.addEventListener("click", function () {
     ? (window.location.href = "benckmarck.html")
     : console.log("da ceckare");
 });
+let b = 0;
