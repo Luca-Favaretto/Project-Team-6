@@ -26,43 +26,43 @@ body {
 
 .h1-result {
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 0;
 }
 .h3-result {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 500;
   margin-top: 0.5rem;
 }
 .block-result {
   display: inline-block;
-  margin: 4rem;
   width: 20%;
+  vertical-align: middle;
 }
-.block-result:nth-child(1) {
-}
-.block-result:nth-child(2) h4:nth-child(2) {
+
+.block-result:nth-child(2) {
+  width: 40%;
   color: #00ffff;
-}
-.block-result:nth-child(3) {
+  margin-inline: 6rem;
 }
 
 .true-false {
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: 300;
   margin: 0px;
 }
 .num {
-  font-size: 3rem;
+  font-size: 4rem;
+  font-weight: 800;
   margin: 0px;
 }
 .questions {
-  font-size: 1rem;
+  font-size: 2rem;
   margin: 0px;
   font-weight: 100;
 }
 .rate-us-button {
-  margin-top: 1.2rem;
+  margin-top: 3.5rem;
   font-weight: 600;
   border: 3px solid white;
   background: #ffffff00;
