@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=2.0" />
     <link rel="stylesheet" href="./assets/normalized.css" />
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style-result.css" />
     <title>Document</title>
   </head>
   <body>
@@ -17,7 +23,7 @@
           alt="logo epicode_logo"
         />
         <div>
-          <h1 class="text-align-center">Results</h1>
+          <h1 class="h1-result text-align-center">Results</h1>
           <h3 class="h3-result text-align-center">
             The summary of your answer:
           </h3>
@@ -28,9 +34,9 @@
       <div>
         <!-- blocco di sinistra -->
         <div class="block-result">
-          <h2>Correct</h2>
-          <h2 class="">66.7%</h2>
-          <p class="">4/6 questions</p>
+          <h2 class="true-false">Correct</h2>
+          <h2 class="num">66.7%</h2>
+          <p class="questions">4/6 questions</p>
         </div>
 
         <!-- blocco del centro -->
@@ -46,9 +52,9 @@
         </div>
         <!-- blocco di sinistra -->
         <div class="block-result">
-          <h2 class="text-align-right">Wrong</h2>
-          <h2 class="text-align-right">33.3%</h2>
-          <p class="text-align-right">2/6 questions</p>
+          <h2 class="true-false text-align-right">Wrong</h2>
+          <h2 class="num text-align-right">33.3%</h2>
+          <p class="questions text-align-right">2/6 questions</p>
         </div>
       </div>
 
@@ -56,5 +62,6 @@
         <button class="rate-us-button">RATE US</button>
       </footer>
     </main>
+    <script src="./js/script-result.js"></script>
   </body>
 </html>
