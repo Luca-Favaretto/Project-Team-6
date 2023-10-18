@@ -1,12 +1,19 @@
-setInterval(function () {
-  console.log("Questa funzione verrà eseguita ogni 2000 ms.");
-  const numTimer = document.querySelector(".timer h2");
+const donutSegment = document.querySelector(".donut-segment");
 
-  console.log(numTimer);
-  if (numTimer.innerText === "0") {
+function updateDashArray(value) {
+  donutSegment.setAttribute("stroke-dasharray", value);
+}
+
+function updateTimer() {
+  const currentValue = parseInt(numTimer.textContent, 10);
+  if (currentValue > 0) {
+    numTimer.textContent = (currentValue - 1).toString();
+    const percentComplete = ((60 - currentValue) / 60) * 100;
+    const dasharrayValue = `${percentComplete} ${100 - percentComplete}`;
+    updateDashArray(dasharrayValue);
+  } else {
     clearInterval(interval);
-    window.location.href = "#";
   }
+}
 
-  numTimer.innerText--;
-}, 1000);
+const interval = setInterval(updateTimer, 1000);
