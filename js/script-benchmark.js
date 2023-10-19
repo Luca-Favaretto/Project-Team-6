@@ -158,7 +158,7 @@ const createBenchmark = function () {
 
       setTimeout(function () {
         createBenchmark();
-      }, 500);
+      }, 200);
       const resetTimer = (numTimer.textContent = "60");
     },
     { once: true }
@@ -178,7 +178,7 @@ const createBenchmark = function () {
 
         setTimeout(function () {
           createBenchmark();
-        }, 500);
+        }, 200);
         const resetTimer = (numTimer.textContent = "60");
       },
       { once: true }
