@@ -25,9 +25,10 @@ body {
 
 /*  Welcome  */
 .h1-welcome {
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: 300;
   line-height: 0.7;
+  margin-top: 7rem;
 }
 
 .h1-welcome b {
@@ -40,12 +41,18 @@ body {
 
 .h3-welcome {
   color: #c2128d;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
+}
+.p-welcome {
+  font-size: 1.3rem;
 }
 
 ul {
   padding-left: 1rem;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  margin-left: 1rem;
 }
 
 #proced-button {
@@ -58,4 +65,7 @@ ul {
   font-size: 1.2rem;
   padding: 1rem 3.5rem;
   font-weight: bold;
+}
+.margin-top-welcome {
+  margin-top: 7rem;
 }
