@@ -94,16 +94,28 @@ const questions = [
   }
 ];
 
+const shuffleArray = function (array) {
+  //funzione per dare dei numeri casuali tutti diversi in base alla lunghezza dell'array
+  const rndNumArray = [];
+  while (rndNumArray.length < array.length) {
+    let rndNum;
+    do {
+      rndNum = Math.floor(Math.random() * array.length);
+    } while (rndNumArray.includes(rndNum));
+    rndNumArray.push(rndNum);
+  }
+  let mixArray = [];
+  for (let i = 0; i < array.length; i++) {
+    mixArray.push(array[rndNumArray[i]]);
+  }
+  return mixArray;
+};
 //per salvare dati
 let countPoint = 0;
 let countQuestion = 0;
 
 //funzione che crea la benchmark
 const createBenchmark = function () {
-  if (countQuestion >= questions.length) {
-    window.location.href = "result-page.html";
-  }
-
   //trovato div per collegare la pagina
   const numCorr = document.getElementById("beenchmark-footer");
   const questionDiv = document.getElementById("question-div");
@@ -115,6 +127,13 @@ const createBenchmark = function () {
   while (answerDiv.firstChild) {
     answerDiv.removeChild(answerDiv.firstChild);
   }
+
+  //fuonzione cambia pagina quando finiscono le domande
+  if (countQuestion >= questions.length) {
+    window.location.href = "result-page.html";
+  }
+  //aggiorna la posizione della domanda nel footer
+  numCorr.innerText = `QUESTION ${countQuestion + 1}`;
 
   //creazione domande
   const question = document.createElement("h1");
@@ -130,48 +149,66 @@ const createBenchmark = function () {
 
   //AGGIUTA FUNZIONE DI CLICK alla risposta corretta
 
-  firstBtn.addEventListener("click", function () {
-    firstBtn.classList = "answer-button-color";
-    countPoint++;
-    countQuestion++;
+  firstBtn.addEventListener(
+    "click",
+    function () {
+      firstBtn.classList = "answer-button-color";
+      countPoint++;
+      countQuestion++;
 
-    numCorr.innerText = `QUESTION ${countQuestion + 1}`;
-    setTimeout(function () {
-      createBenchmark();
-    }, 300);
-    const resetTimer = (numTimer.textContent = "60");
-  });
+      setTimeout(function () {
+        createBenchmark();
+      }, 500);
+      const resetTimer = (numTimer.textContent = "60");
+    },
+    { once: true }
+  );
   //creazione risposte/a sbagliate
   questions[countQuestion].incorrect_answers.forEach(string => {
     const btn = document.createElement("button");
     btn.classList = "wait-button-color";
     btn.innerText = string;
     //AGGIUTA FUNZIONE DI CLICK alla risposta sbagliata
-    btn.addEventListener("click", function () {
-      btn.classList = "answer-button-color";
+    btn.addEventListener(
+      "click",
+      function () {
+        btn.classList = "answer-button-color";
 
-      countQuestion++;
-      setTimeout(1000);
-      numCorr.innerText = `QUESTION ${countQuestion + 1}`;
-      setTimeout(function () {
-        createBenchmark();
-      }, 300);
-      const resetTimer = (numTimer.textContent = "60");
-    });
+        countQuestion++;
+
+        setTimeout(function () {
+          createBenchmark();
+        }, 500);
+        const resetTimer = (numTimer.textContent = "60");
+      },
+      { once: true }
+    );
+
     answerDiv.appendChild(btn);
   });
+
+  // Ottieni il contenitore e i suoi figli
+  const arrayAnswer = Array.from(
+    document.getElementsByClassName("wait-button-color")
+  );
+
+  // // Mescola l'array di box in modo casuale
+  const mixArray = shuffleArray(arrayAnswer);
+
+  // // Rimuovi i box dal contenitore
+  arrayAnswer.forEach(button => answerDiv.removeChild(button));
+
+  // // Aggiungi i box riordinati al contenitore
+  mixArray.forEach(button => answerDiv.appendChild(button));
 };
 createBenchmark();
 
 window.onload = function () {
   const interval = setInterval(updateTimer, 1000);
-
   const donutSegment = document.querySelector(".donut-segment");
-
   function updateDashArray(value) {
     donutSegment.setAttribute("stroke-dasharray", value);
   }
-
   function updateTimer() {
     const currentValue = parseInt(numTimer.textContent);
     if (currentValue > 0) {
@@ -180,7 +217,9 @@ window.onload = function () {
       const dasharrayValue = `${percentComplete} ${100 - percentComplete}`;
       updateDashArray(dasharrayValue);
     } else {
-      clearInterval(interval);
+      countQuestion++;
+      const resetTimer = (numTimer.textContent = "60");
+      createBenchmark();
     }
   }
 };
