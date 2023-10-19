@@ -200,24 +200,15 @@ const createBenchmark = function () {
 
   // // Aggiungi i box riordinati al contenitore
   mixArray.forEach(button => answerDiv.appendChild(button));
-  // // }
-  // // if (btn !== clickedButton && firstBtn !== clickedButton) {
-  // //   btn.disabled = true;
-  // //   firstBtn.disabled = true;
-  // }
-  console.log(countPoint);
 };
 createBenchmark();
 
 window.onload = function () {
   const interval = setInterval(updateTimer, 1000);
-
   const donutSegment = document.querySelector(".donut-segment");
-
   function updateDashArray(value) {
     donutSegment.setAttribute("stroke-dasharray", value);
   }
-
   function updateTimer() {
     const currentValue = parseInt(numTimer.textContent);
     if (currentValue > 0) {
@@ -226,7 +217,9 @@ window.onload = function () {
       const dasharrayValue = `${percentComplete} ${100 - percentComplete}`;
       updateDashArray(dasharrayValue);
     } else {
-      clearInterval(interval);
+      countQuestion++;
+      const resetTimer = (numTimer.textContent = "60");
+      createBenchmark();
     }
   }
 };
