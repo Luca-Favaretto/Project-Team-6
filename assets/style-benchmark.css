@@ -1,4 +1,7 @@
-/* General */
+/* General  */
+* {
+  box-sizing: content-box;
+}
 body {
   background-image: url(../assets/bg.jpg);
   background-size: cover;
@@ -136,6 +139,8 @@ header {
   width: 40%;
   margin: 1rem;
   cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .wait-button-color {
