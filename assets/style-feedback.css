@@ -1,4 +1,7 @@
 /* General  */
+* {
+  box-sizing: content-box;
+}
 body {
   background-image: url(../assets/bg.jpg);
   background-size: cover;
