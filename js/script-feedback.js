@@ -40,7 +40,7 @@ const formfeedback = document.getElementById("form-feedback").addEventListener("
       feedbackMain.removeChild(feedbackMain.firstChild);
     }
 
-    titolo.innerText = "Grazie per il tuo feedback";
+    titolo.innerText = "Siamo estiasiati per averti soddisfatto";
     faccina.innerHTML = `
       <img
       
@@ -79,7 +79,7 @@ const formfeedback = document.getElementById("form-feedback").addEventListener("
     while (feedbackMain.firstChild) {
       feedbackMain.removeChild(feedbackMain.firstChild);
     }
-    titolo.innerText = "Grazie per il tuo feedback";
+    titolo.innerText = "cercheremo di migliorare";
     faccina.innerHTML = `
       <img
       
@@ -98,7 +98,7 @@ const formfeedback = document.getElementById("form-feedback").addEventListener("
     while (feedbackMain.firstChild) {
       feedbackMain.removeChild(feedbackMain.firstChild);
     }
-    titolo.innerText = "Grazie per il tuo feedback";
+    titolo.innerText = "Ci dispiace non averti soddisfatto";
     faccina.innerHTML = `
       <img
       src="https://www.freeiconspng.com/uploads/crying-emoji-png-10.png" width="350"
