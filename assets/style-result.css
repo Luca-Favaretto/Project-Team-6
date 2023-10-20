@@ -76,3 +76,7 @@ body {
 .hide {
   display: none;
 }
+
+#result-pie > text:nth-child(1) {
+  color: red;
+}
