@@ -199,6 +199,15 @@ const createBenchmark = function () {
     document.getElementsByClassName("wait-button-color")
   );
 
+  // funzione che aggiunge disable ai bottoni al primo click
+  arrayAnswer.forEach(button => {
+    button.addEventListener("click", function () {
+      arrayAnswer.forEach(button => {
+        button.disabled = true;
+      });
+    });
+  });
+
   // // Mescola l'array di box in modo casuale
   const mixArray = shuffleArray(arrayAnswer);
 
