@@ -14,7 +14,7 @@ body {
   margin-inline: auto;
 }
 .logo {
-  width: 8rem;
+  width: 10rem;
   margin-top: 3rem;
 }
 .text-align-center {
@@ -26,8 +26,8 @@ body {
 
 /* feedback */
 
-.h1Feedback {
-  font-size: 3.3rem;
+.h1-feedback {
+  font-size: 3.5rem;
   margin-top: 5rem;
   margin-bottom: 0;
 }
@@ -44,7 +44,7 @@ body {
 }
 .star {
   display: inline-block;
-  width: 4.5%;
+  width: 5%;
   margin: 0.3rem;
   cursor: pointer;
 }
@@ -55,15 +55,14 @@ body {
   filter: none;
 }
 .comment-width {
-  width: 40rem;
+  width: 44rem;
   padding: 10px 20px;
   border-color: transparent;
   border-bottom: 2px solid #c2138c;
-  font-size: 15px;
+  font-size: 1rem;
   background: transparent;
   margin-bottom: 2rem;
   color: aliceblue;
-  font-size: 1.3rem;
 }
 
 #btn-more-info {
