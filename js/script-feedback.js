@@ -40,12 +40,17 @@ const formfeedback = document.getElementById("form-feedback").addEventListener("
       feedbackMain.removeChild(feedbackMain.firstChild);
     }
 
-    titolo.innerText = "Grazie ";
+    titolo.innerText = "Grazie per il tuo feedback";
     faccina.innerHTML = `
       <img
-        src="https://images.unsplash.com/photo-1693087557029-9cbe5d2ef4f3?auto=format&fit=crop&q=80&w=2630&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="signorina"
-        width="1000px"
+      
+      
+      src="https://www.freeiconspng.com/uploads/lover-emoji-png-6.png" width="350"
+        alt="lover emoji png"
+        style="
+    display: inline-block;
+    margin-top: 7rem;
+    margin-left: 20%;"
       />
     `;
 
@@ -56,39 +61,55 @@ const formfeedback = document.getElementById("form-feedback").addEventListener("
     while (feedbackMain.firstChild) {
       feedbackMain.removeChild(feedbackMain.firstChild);
     }
+    titolo.innerText = "Grazie per il tuo feedback";
     faccina.innerHTML = `
       <img
-        src="https://images.unsplash.com/photo-1683009427500-71296178737f?auto=format&fit=crop&q=80&w=2671&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="signorina"
-        width="1000px"
+        src="https://emojiisland.com/cdn/shop/products/Slightly_Smiling_Face_Emoji_87fdae9b-b2af-4619-a37f-e484c5e2e7a4_large.png?v=1571606036" width="350
+        alt="faccina sorridente"
+        style="
+    display: inline-block;
+    margin-top: 7rem;
+    margin-left: 20%;"
       />
     `;
+    feedbackMain.appendChild(titolo);
     feedbackMain.appendChild(faccina);
   } else if (numStarGray < 5) {
     console.log(numStarGray + " 6");
     while (feedbackMain.firstChild) {
       feedbackMain.removeChild(feedbackMain.firstChild);
     }
+    titolo.innerText = "Grazie per il tuo feedback";
     faccina.innerHTML = `
       <img
-        src="https://images.unsplash.com/photo-1696944871997-b449de2b488e?auto=format&fit=crop&q=80&w=2574&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="signorina"
-        width="1000px"
+      
+      src="https://www.freeiconspng.com/uploads/sad-emoji-png-8.png" width="350"
+      alt="sad emoji png"
+        style="
+    display: inline-block;
+    margin-top: 7rem;
+    margin-left: 20%;"
       />
     `;
+    feedbackMain.appendChild(titolo);
     feedbackMain.appendChild(faccina);
   } else {
     console.log(numStarGray + " <6");
     while (feedbackMain.firstChild) {
       feedbackMain.removeChild(feedbackMain.firstChild);
     }
+    titolo.innerText = "Grazie per il tuo feedback";
     faccina.innerHTML = `
       <img
-        src="https://images.unsplash.com/photo-1697128951378-e636f988c9cf?auto=format&fit=crop&q=80&w=2574&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="signorina"
-        width="1000px"
+      src="https://www.freeiconspng.com/uploads/crying-emoji-png-10.png" width="350"
+        alt="crying emoji png"
+        style="
+    display: inline-block;
+    margin-top: 7rem;
+    margin-left: 20%;"
       />
     `;
+    feedbackMain.appendChild(titolo);
     feedbackMain.appendChild(faccina);
   }
 });
