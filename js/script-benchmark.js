@@ -113,6 +113,8 @@ const shuffleArray = function (array) {
 //per salvare dati
 let countPoint = 0;
 let countQuestion = 0;
+const divBenchmark = document.getElementsByClassName("to-hide");
+console.log(divBenchmark);
 
 //funzione che crea la benchmark
 const createBenchmark = function () {
@@ -130,7 +132,12 @@ const createBenchmark = function () {
 
   //fuonzione cambia pagina quando finiscono le domande
   if (countQuestion >= questions.length) {
-    window.location.href = "result-page.html";
+    const sectionResult = document.getElementsByClassName("hide")[0];
+    const divBenchmark = document.getElementsByClassName("to-hide")[0];
+    divBenchmark.classList.add("hide");
+    sectionResult.classList.remove("hide");
+    editPie();
+    return countPoint;
   }
   //aggiorna la posizione della domanda nel footer
   numCorr.innerText = `QUESTION ${countQuestion + 1}`;
@@ -211,6 +218,10 @@ window.onload = function () {
   }
   function updateTimer() {
     const currentValue = parseInt(numTimer.textContent);
+    if (countQuestion >= questions.length) {
+      clearInterval(interval);
+    }
+
     if (currentValue > 0) {
       numTimer.textContent = (currentValue - 1).toString();
       const percentComplete = ((60 - currentValue) / 60) * 100;
