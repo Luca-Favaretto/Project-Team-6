@@ -3,7 +3,7 @@ console.log(starContainer);
 const starImg = Array.from(document.getElementsByClassName("star"));
 console.log(starImg);
 
-starImg.forEach(img => {
+starImg.forEach((img) => {
   img.addEventListener("click", function (e) {
     const indexImg = starImg.indexOf(e.target);
 
@@ -25,69 +25,70 @@ btnMoreInfo.onclick = function (e) {
   );
 };
 
-const formfeedback = document
-  .getElementById("form-feedback")
-  .addEventListener("submit", function (e) {
-    e.preventDefault();
+const formfeedback = document.getElementById("form-feedback").addEventListener("submit", function (e) {
+  e.preventDefault();
 
-    const feedbackMain = document.getElementById("feedback-main");
+  const feedbackMain = document.getElementById("feedback-main");
 
-    const numStarGray = Array.from(
-      document.getElementsByClassName("star-gray")
-    ).length;
-    const faccina = document.createElement("p");
+  const numStarGray = Array.from(document.getElementsByClassName("star-gray")).length;
+  const faccina = document.createElement("p");
+  const titolo = document.createElement("h1");
+  titolo.classList.add("h1Feedback");
+  if (numStarGray < 2) {
+    console.log(numStarGray + " 9-10");
+    while (feedbackMain.firstChild) {
+      feedbackMain.removeChild(feedbackMain.firstChild);
+    }
 
-    if (numStarGray < 2) {
-      console.log(numStarGray + " 9-10");
-      while (feedbackMain.firstChild) {
-        feedbackMain.removeChild(feedbackMain.firstChild);
-      }
-      faccina.innerHTML = `
+    titolo.innerText = "Grazie ";
+    faccina.innerHTML = `
       <img
         src="https://images.unsplash.com/photo-1693087557029-9cbe5d2ef4f3?auto=format&fit=crop&q=80&w=2630&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="signorina"
         width="1000px"
       />
     `;
-      feedbackMain.appendChild(faccina);
-    } else if (numStarGray < 4) {
-      console.log(numStarGray + " 8-7");
-      while (feedbackMain.firstChild) {
-        feedbackMain.removeChild(feedbackMain.firstChild);
-      }
-      faccina.innerHTML = `
+
+    feedbackMain.appendChild(titolo);
+    feedbackMain.appendChild(faccina);
+  } else if (numStarGray < 4) {
+    console.log(numStarGray + " 8-7");
+    while (feedbackMain.firstChild) {
+      feedbackMain.removeChild(feedbackMain.firstChild);
+    }
+    faccina.innerHTML = `
       <img
         src="https://images.unsplash.com/photo-1683009427500-71296178737f?auto=format&fit=crop&q=80&w=2671&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="signorina"
         width="1000px"
       />
     `;
-      feedbackMain.appendChild(faccina);
-    } else if (numStarGray < 5) {
-      console.log(numStarGray + " 6");
-      while (feedbackMain.firstChild) {
-        feedbackMain.removeChild(feedbackMain.firstChild);
-      }
-      faccina.innerHTML = `
+    feedbackMain.appendChild(faccina);
+  } else if (numStarGray < 5) {
+    console.log(numStarGray + " 6");
+    while (feedbackMain.firstChild) {
+      feedbackMain.removeChild(feedbackMain.firstChild);
+    }
+    faccina.innerHTML = `
       <img
         src="https://images.unsplash.com/photo-1696944871997-b449de2b488e?auto=format&fit=crop&q=80&w=2574&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="signorina"
         width="1000px"
       />
     `;
-      feedbackMain.appendChild(faccina);
-    } else {
-      console.log(numStarGray + " <6");
-      while (feedbackMain.firstChild) {
-        feedbackMain.removeChild(feedbackMain.firstChild);
-      }
-      faccina.innerHTML = `
+    feedbackMain.appendChild(faccina);
+  } else {
+    console.log(numStarGray + " <6");
+    while (feedbackMain.firstChild) {
+      feedbackMain.removeChild(feedbackMain.firstChild);
+    }
+    faccina.innerHTML = `
       <img
         src="https://images.unsplash.com/photo-1697128951378-e636f988c9cf?auto=format&fit=crop&q=80&w=2574&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="signorina"
         width="1000px"
       />
     `;
-      feedbackMain.appendChild(faccina);
-    }
-  });
+    feedbackMain.appendChild(faccina);
+  }
+});
