@@ -18,7 +18,7 @@ body {
 }
 
 .logo {
-  width: 8rem;
+  width: 10rem;
   margin-top: 3rem;
 }
 /* Welcome */
@@ -107,7 +107,7 @@ header {
 
 .h1-beenchmark {
   text-align: center;
-  margin: 8rem 0 4rem;
+  margin: 12rem 0 4rem;
 }
 
 .timer {
@@ -162,7 +162,7 @@ header {
 }
 
 #beenchmark-footer {
-  margin-top: 4rem;
+  margin-top: 8rem;
   display: inline-block;
 }
 .question-color {
