@@ -38,23 +38,22 @@ const formfeedback = document
     const faccina = document.createElement("p");
     const titolo = document.createElement("h1");
     titolo.classList.add("h1Feedback");
+
     if (numStarGray < 2) {
       console.log(numStarGray + " 9-10");
       while (feedbackMain.firstChild) {
         feedbackMain.removeChild(feedbackMain.firstChild);
       }
+      feedbackMain.classList.add("text-align-center");
 
-      titolo.innerText = "Siamo estasiati per averti soddisfatto";
+      titolo.innerText = "Siamo estiasiati per averti soddisfatto";
       faccina.innerHTML = `
       <img
       
       
       src="https://www.freeiconspng.com/uploads/lover-emoji-png-6.png" width="350"
         alt="lover emoji png"
-        style="
-    display: inline-block;
-    margin-top: 7rem;
-    margin-left: 20%;"
+        style="margin-top: 7rem;"
       />
     `;
 
@@ -65,15 +64,13 @@ const formfeedback = document
       while (feedbackMain.firstChild) {
         feedbackMain.removeChild(feedbackMain.firstChild);
       }
+      feedbackMain.classList.add("text-align-center");
       titolo.innerText = "Grazie per il tuo feedback";
       faccina.innerHTML = `
       <img
         src="https://emojiisland.com/cdn/shop/products/Slightly_Smiling_Face_Emoji_87fdae9b-b2af-4619-a37f-e484c5e2e7a4_large.png?v=1571606036" width="350
         alt="faccina sorridente"
-        style="
-    display: inline-block;
-    margin-top: 7rem;
-    margin-left: 20%;"
+        style="margin-top: 7rem;"
       />
     `;
       feedbackMain.appendChild(titolo);
@@ -83,16 +80,14 @@ const formfeedback = document
       while (feedbackMain.firstChild) {
         feedbackMain.removeChild(feedbackMain.firstChild);
       }
+      feedbackMain.classList.add("text-align-center");
       titolo.innerText = "cercheremo di migliorare";
       faccina.innerHTML = `
       <img
       
       src="https://www.freeiconspng.com/uploads/sad-emoji-png-8.png" width="350"
       alt="sad emoji png"
-        style="
-    display: inline-block;
-    margin-top: 7rem;
-    margin-left: 20%;"
+        style="margin-top: 7rem;"
       />
     `;
       feedbackMain.appendChild(titolo);
@@ -102,15 +97,13 @@ const formfeedback = document
       while (feedbackMain.firstChild) {
         feedbackMain.removeChild(feedbackMain.firstChild);
       }
+      feedbackMain.classList.add("text-align-center");
       titolo.innerText = "Ci dispiace non averti soddisfatto";
       faccina.innerHTML = `
       <img
       src="https://www.freeiconspng.com/uploads/crying-emoji-png-10.png" width="350"
         alt="crying emoji png"
-        style="
-    display: inline-block;
-    margin-top: 7rem;
-    margin-left: 20%;"
+        style="margin-top: 7rem;"
       />
     `;
       feedbackMain.appendChild(titolo);
