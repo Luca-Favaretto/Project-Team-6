@@ -1,0 +1,175 @@
+/* General  */
+* {
+  box-sizing: content-box;
+}
+body {
+  background-image: url(../assets/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  line-height: 1;
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+}
+.container {
+  width: 1000px;
+  margin-inline: auto;
+}
+
+.logo {
+  width: 10rem;
+  margin-top: 3rem;
+}
+/* Welcome */
+.h1-welcom {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 0.8;
+}
+
+.h1-welcom b {
+  font-weight: 900;
+}
+
+.h3-result {
+  font-weight: 400;
+}
+.block-result {
+  display: inline-block;
+  width: 33%;
+}
+.block-result:nth-child(2) {
+  font-size: 1rem;
+}
+.block-result:nth-child(2) h4:nth-child(2) {
+  color: #00ffff;
+}
+.block-result:nth-child(2) .accent-color {
+  color: #00ffff;
+  font-size: 60px;
+}
+.block-result:nth-child(2) p {
+  font-size: 0.6rem;
+}
+ul {
+  padding-left: 1rem;
+}
+ul li {
+  margin: 0.5rem;
+}
+
+header {
+  text-align: left;
+}
+.h1-welcom {
+  font-size: 3rem;
+}
+.h1-welcom b {
+  font-weight: 10rem;
+  color: red;
+}
+.h2-feedback {
+  font-weight: 100;
+}
+.text-align-center {
+  text-align: center;
+}
+.text-align-right {
+  text-align: right;
+}
+
+/* benchmark */
+.logo-beenchmark {
+  width: 10rem;
+  margin-top: 3rem;
+}
+
+header {
+  text-align: left;
+}
+.timer {
+  float: right;
+  margin: 2rem 2rem 0 0;
+}
+
+.h2-feedback {
+  font-weight: 100;
+}
+
+#star-container {
+  text-align: center;
+}
+.star {
+  display: inline-block;
+  width: 5%;
+}
+
+.h1-beenchmark {
+  text-align: center;
+  margin: 12rem 0 4rem;
+}
+
+.timer {
+  width: 8rem;
+  float: right;
+  margin: 2rem 2rem 0 0;
+}
+.answer-button-color {
+  color: white;
+  background: linear-gradient(
+    180deg,
+    rgba(210, 0, 148, 1) 21%,
+    rgba(144, 0, 128, 1) 100%
+  );
+  border-radius: 50px;
+  -webkit-box-shadow: inset 2px 2px 2px 2px #ffffff;
+  -moz-box-shadow: inset 2px 2px 2px 2px #ffffff;
+  -o-box-shadow: inset 2px 2px 2px 2px #ffffff;
+  box-shadow: inset 2px 2px 2px 2px #ffffff;
+  border-image-slice: 1;
+  border-image-width: 4px;
+  padding: 2rem 1rem 2rem;
+  display: inline-block;
+  width: 40%;
+  margin: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.wait-button-color {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.109);
+  border-radius: 50px;
+  -webkit-box-shadow: inset 2px 2px 2px 2px #ffffff;
+  -moz-box-shadow: inset 2px 2px 2px 2px #ffffff;
+  -o-box-shadow: inset 2px 2px 2px 2px #ffffff;
+  box-shadow: inset 2px 2px 2px 2px #ffffff;
+  border-radius: 50px;
+  padding: 2rem 1rem 2rem;
+  display: inline-block;
+  width: 40%;
+  margin: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.question-footer {
+  margin-top: 6rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#beenchmark-footer {
+  margin-top: 8rem;
+  display: inline-block;
+}
+.question-color {
+  color: white;
+  font-size: 1.5rem;
+}
+.question-color2 {
+  color: #c2138c;
+  font-size: 1.5rem;
+}
